@@ -1,0 +1,12 @@
+#include <stddef.h>
+#include <stdio.h>
+
+int main()
+{
+	char* string1 = "ryan and";
+	const char* string2 = "josh";
+	
+	new_strncat(string1, string2, 2048);
+	
+	printf("%s/n", string1);
+}

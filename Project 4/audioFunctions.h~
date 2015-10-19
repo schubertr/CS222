@@ -1,0 +1,12 @@
+void input(short* left, short* right, int size);
+void output(short* left, short* right, int size, WaveHeader* wave);
+
+void checkFileErrors(WaveHeader wave);
+
+void reverse(short* left, short* right, int size);
+short* speed(short* left, int size, double factor);
+void swapC(short** left, short** right);
+void fadeo(short* right, short* left, int size, double time);
+void volume(short* left, short* right, int size, double scale);
+void fadei(short* right, short* left, int size, double time);
+short* echo(short* array, int size, double delay, double scale)
